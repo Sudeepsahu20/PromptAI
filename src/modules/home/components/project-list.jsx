@@ -10,7 +10,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { FolderKanban, Calendar, ArrowRight } from "lucide-react";
-import Image from 'next/image'
 import React from 'react'
 import Link from "next/link";
 
