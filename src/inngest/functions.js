@@ -210,6 +210,18 @@ export const codeAgentFunction = inngest.createFunction(
       result.state.data.summary
     );
 
+    const generateFragmentTitle = () => {
+      if (fragmentTitleOutput[0].type !== "text") {
+        return "Fragment";
+      }
+
+      if (Array.isArray(fragmentTitleOutput[0].content)) {
+        return fragmentTitleOutput[0].content.map((c) => c).join("");
+      } else {
+        return fragmentTitleOutput[0].content;
+      }
+    };
+
      const generateResponse = () => {
       if (responseOutput[0].type !== "text") {
         return "Here you go";
