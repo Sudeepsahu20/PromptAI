@@ -15,7 +15,7 @@ export const createProject=async(value)=>{
  try {
   await consumeCredits();
 } catch (error) {
-  throw error; // 👈 sabse clean
+  throw error;
 }
 
      const newProject = await db.project.create({

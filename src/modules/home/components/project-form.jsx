@@ -137,7 +137,7 @@ const ProjectForm = () => {
         </div>
       </div>
 
-      <Form {...form}>
+ <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
           className={cn(

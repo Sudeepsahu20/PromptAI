@@ -23,7 +23,7 @@ export const OnBoardUser=async()=>{
         email: emailAddresses[0]?.emailAddress || "",
         },
         create:{
-           clerkId: id,
+         clerkId: id,
         name: firstName && lastName ? `${firstName} ${lastName}` : firstName || lastName || null,
         image: imageUrl || null,
         email: emailAddresses[0]?.emailAddress || "",

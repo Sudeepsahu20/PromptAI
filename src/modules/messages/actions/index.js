@@ -21,7 +21,7 @@ export const createMessages=async(value,projectId)=>{
  try {
   await consumeCredits();
 } catch (error) {
-  throw error; // 👈 sabse clean
+  throw error; 
 }
 
     const newMessage = await db.message.create({
